@@ -14,3 +14,8 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+              -Dsonar.organization=my-project-demo
+              -Dsonar.projectKey=demo-CIactions
+              -Dsonar.python.coverage.reportPaths=coverage.xml
