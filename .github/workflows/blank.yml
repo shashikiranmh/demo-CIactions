@@ -17,6 +17,6 @@ jobs:
             SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           args: >
-              -Dsonar.organization=my-project-demo
+              
               -Dsonar.projectKey=my-project-demo_test-sonar
               -Dsonar.python.coverage.reportPaths=coverage.xml
